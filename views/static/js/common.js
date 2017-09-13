@@ -19,7 +19,7 @@ define(["jquery","template","cookie"],function($,template){
 				success:function(data){
 					if(data.code==200){
 						location.href="/dashboard/login";
-						$.removeCookie("userinfo");
+						//$.removeCookie("userinfo");
 					}
 				}
 			})
@@ -36,8 +36,6 @@ define(["jquery","template","cookie"],function($,template){
 				if(location.pathname==$(ele).attr("href")){
 					$(ele).addClass("active")
 				}
-
-
 		})
 
 
